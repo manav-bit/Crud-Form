@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	
+</head>
+<body>
+	<h1>Employee List</h1>
+	<table id="employeeTable">
+		<thead>
+			<tr >
+				<th >EID</th>
+				<th >Name</th>
+				<th >Address</th>
+				<th >Phone</th>
+				<th>Job Title</th>
+				<th>Email</th>
+				<th>Primary Contact Name</th>
+				<th >Primary Contact Number</th>
+				<th >Primary Contact Relation</th>
+				<th >Secondary Contact Name</th>
+				<th >Secondary Contact Number</th>
+				<th >Secondary Contact Relation</th>
+				<th>Actions</th>
+			  </tr>
+		</thead>
+		<tbody id="employee-table-body"></tbody>
+	</table>
+	 <div id="pagination-container"> 
+		
+	</div> 
+	<!-- button to showform -->
+<button id="showform" style="padding: 10px 20px; background-color: #8ce95f; color: black; border-radius: 20px; border: none; box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);font-weight: bold;" >Add New Employee</button>
+	<!-- //form// new employee form -->
+<div id="formouter" >
+	
+	<div id="formparent">
+		
+		<div>
+	  
+			<h1 id="heading">Employee Contact Form</h1>
+		</div>
+	  <form id="employee-contact-form">
+		<label for="name">Employee Name</label>
+		<input type="text" id="name" name="name" required>
+		<label for="jobtitle">Job Title</label>
+		<input type="text" id="jobtitle" name="jobtitle" required>
+	  
+	  
+		<label for="address">Address</label>
+		<input type="text" id="address" name="address" required>
+		
+	  
+		<label for="phone">Phone</label>
+		<input type="tel" id="phone" name="phone">
+	  
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email">
+	  <!-- //primary -->
+		<label for="pname">Primary Emergency Contact</label>
+		<input type="text" id="pname" name="pname" required>
+		<label for="pnumber">Phone</label>
+		<input type="tel" id="pnumber" name="pnumber">
+		<label for="prelation">Relationship</label>
+		<input type="text" id="prelation" name="prelation" required>
+	  
+	  <!-- secondary -->
+		<label for="sname">Secondary Emergency Contact</label>
+		<input type="text" id="sname" name="sname" required>
+		<label for="snumber">Phone</label>
+		<input type="tel" id="snumber" name="snumber">
+		<label for="srelation">Relationship</label>
+		<input type="text" id="srelation" name="srelation" required>
+	  
+		<button type="submit" class="submit" >Submit</button>
+		<button class="close-button" id="closebtn1" >&times;</button>
+	  </form>
+		</div>
+	
+</div>
+<!-- updation form -->
+<div id="updateformouter" style="display:none">
+
+
+<form id="updateform" >
+	
+	<label for="name">Employee Name</label>
+	<input type="text" id="name" name="name" required>
+	<label for="jobtitle">Job Title</label>
+	<input type="text" id="jobtitle" name="jobtitle" required>
+  
+  
+	<label for="address">Address</label>
+	<input type="text" id="address" name="address" required>
+	
+  
+	<label for="phone">Phone</label>
+	<input type="tel" id="phone" name="phone">
+  
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email">
+  <!-- //primary -->
+	<label for="pname">Primary Emergency Contact</label>
+	<input type="text" id="pname" name="pname" required>
+	<label for="pnumber">Phone</label>
+	<input type="tel" id="pnumber" name="pnumber">
+	<label for="prelation">Relationship</label>
+	<input type="text" id="prelation" name="prelation" required>
+  
+  <!-- secondary -->
+	<label for="sname">Secondary Emergency Contact</label>
+	<input type="text" id="sname" name="sname" required>
+	<label for="snumber">Phone</label>
+	<input type="tel" id="snumber" name="snumber">
+	<label for="srelation">Relationship</label>
+	<input type="text" id="srelation" name="srelation" required>
+  
+	<button type="submit" class="submit">Submit</button>
+	<!-- <button class="close-button" id="closebtn2" >&times;</button> -->
+</form>
+</div>
+	
+	 <script src="/script.js"></script>
+</body>
+
+</html>
+
+
